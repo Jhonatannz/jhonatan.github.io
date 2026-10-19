@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fbf6ec;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #2b1317 0%, #14080a 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+.greetings h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.greetings span {
+    color: #c2a061;
+    text-shadow: 0 0 15px rgba(194, 160, 97, 0.4);
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #d1c8c0;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.7;
+    display: block;
+    margin-top: 10px;
+}
+
+.botones {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 80px;
+    background-color: #6e1f2b;
+    color: #fbf6ec;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid rgba(194, 160, 97, 0.3);
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.6);
+}
+
+.botones:hover {
+    background-color: #8a2837;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -10px rgba(110, 31, 43, 0.8);
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+    .greetings h1 { font-size: 2.8rem; }
+    .description { font-size: 1rem; padding: 0 15px; }
+    .botones { padding: 12px 30px; font-size: 1rem; }
+}
