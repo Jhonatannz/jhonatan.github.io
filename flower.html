@@ -8,7 +8,7 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon" />
     <title>Flower</title>
     
-    <!-- Estilos adicionales para el botón de la carta -->
+    <!-- Estilos adicionales para el botón de la carta y ajustes móviles -->
     <style>
       .btn-carta-container {
           position: fixed;
@@ -53,6 +53,19 @@
               padding: 12px 20px;
               font-size: 0.9rem;
           }
+          
+          /* AQUI ESTA EL ARREGLO DEL TEXTO PARA CELULAR */
+          .titulo {
+              font-size: 1.05rem; /* Letra un poco más pequeña */
+              letter-spacing: 1px; /* Menos espacio entre letras */
+              width: 90%; /* Para que no se salga de la pantalla */
+              margin-bottom: 0; 
+              top: 12%; /* Lo posiciona en la parte de arriba */
+              left: 50%;
+              transform: translateX(-50%);
+              line-height: 1.6;
+              padding: 0 10px;
+          }
       }
       
       @keyframes fadeInButton {
@@ -72,7 +85,7 @@
      
     </div>
     
-    <!-- NUEVO TEXTO -->
+    <!-- TEXTO DE LAS FLORES -->
     <h1 class="titulo">
       Sé que no soy el mejor para estas cosas, pero pues, aquí estoy haciendo este pequeño detalle. <br><br>
       ¿Y si se pregunta por qué amarillo? ...Es porque, a diferencia de lo que piensa el resto, para mí cualquier día es ideal para regalar y transmitirle que es una persona muy especial.
